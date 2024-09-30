@@ -1,5 +1,15 @@
 module.exports = {
     schemas: {
+        TaskBody: {
+            type: "object",
+            properties: {
+                title: {
+                    type: "string",
+                    description: "Title of the task",
+                    example: "Finish Swagger documentation",
+                }
+            }
+        },
         Task: {
             type: "object",
             properties: {
@@ -31,7 +41,6 @@ module.exports = {
                     example: "2021-09-01T12:00:00.000Z",
                 },
             },
-            required: ["title"],
         },
     },
 };

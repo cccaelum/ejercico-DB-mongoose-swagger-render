@@ -10,7 +10,7 @@ module.exports = {
                     content: {
                         "application/json": {
                             schema: {
-                                $ref: "#/components/schemas/Task",
+                                $ref: "#/components/schemas/TaskBody",
                             },
                         },
                     },
@@ -92,17 +92,14 @@ module.exports = {
                         name: "_id",
                         in: "path",
                         required: true,
-                        description: "The ID of the task to update",
-                        schema: {
-                            type: "string",
-                        },
+                        description: "The ID of the task to update"
                     },
                 ],
                 requestBody: {
                     content: {
                         "application/json": {
                             schema: {
-                                $ref: "#/components/schemas/Task",
+                                $ref: "#/components/schemas/TaskBody",
                             },
                         },
                     },
